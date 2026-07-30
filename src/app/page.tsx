@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
 import { Panel } from "@/components/ui/Panel";
+import { Badge } from "@/components/ui/Badge";
 
 export default function Home() {
   return (
@@ -32,6 +33,19 @@ export default function Home() {
          <Card title="Panel">
           <Panel title="パネルタイトル"></Panel>
          </Card>
+         {/* Panelコンポーネント */}
+        <Card title="Badge">
+          <div className="flex flex-wrap items-center gap-2">
+            <Badge color="success">Success</Badge>
+            <Badge color="warning">Warning</Badge>
+            <Badge color="error">Error</Badge>
+            <Badge color="info">Info</Badge>
+            <Badge color="default">Default</Badge>
+            <Badge color="新着">新着</Badge>
+            <Badge color="人気">人気</Badge>
+            <Badge color="おすすめ">おすすめ</Badge>
+          </div>
+        </Card>
       </div>
     </div>
   );
