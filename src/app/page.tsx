@@ -1,5 +1,6 @@
 import { Card } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
+import { Panel } from "@/components/ui/Panel";
 
 export default function Home() {
   return (
@@ -27,6 +28,10 @@ export default function Home() {
             <Button className="w-26 h-12" variant="primary">Large</Button>
           </div>
         </Card>
+        {/* Panelコンポーネント */}
+         <Card title="Panel">
+          <Panel title="パネルタイトル"></Panel>
+         </Card>
       </div>
     </div>
   );
