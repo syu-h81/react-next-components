@@ -1,4 +1,5 @@
 import { Card } from "@/app/components/ui/Card";
+import { Button } from "@/app/components/ui/Button";
 
 export default function Home() {
   return (
@@ -8,7 +9,25 @@ export default function Home() {
         <p className="mt-2 text-xl text-zinc-700">モダンで使いやすい UI コンポーネント集</p>
       </div>
 
-      <Card />
+      {/* ↓↓↓↓↓ ここにコンポーネントを追加していく ↓↓↓↓↓ */}
+      <div className="grid w-full max-w-6xl grid-cols-1 gap-6 md:grid-cols-2 mt-8">
+        {/* Buttonコンポーネント */}
+        <Card title="Button">
+          <div className="flex flex-wrap items-center gap-3">
+            <Button variant="primary">Primary Button</Button>
+            <Button variant="success">Success Button</Button>
+            <Button variant="danger">Danger Button</Button>
+          </div>
+          <div className="mt-4">
+            <Button variant="disabled">Disabled</Button>
+          </div>
+          <div className="flex flex-wrap items-center gap-3 mt-4">
+            <Button className="w-14 h-8 text-sm" variant="primary">Small</Button>
+            <Button variant="primary">Medium</Button>
+            <Button className="w-26 h-12" variant="primary">Large</Button>
+          </div>
+        </Card>
+      </div>
     </div>
   );
 }
