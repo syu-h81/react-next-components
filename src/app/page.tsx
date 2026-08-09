@@ -2,6 +2,7 @@ import { Card } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
 import { Panel } from "@/components/ui/Panel";
 import { Badge } from "@/components/ui/Badge";
+import { Avatar } from "@/components/ui/Avatar";
 
 export default function Home() {
   return (
@@ -44,6 +45,12 @@ export default function Home() {
             <Badge color="新着">新着</Badge>
             <Badge color="人気">人気</Badge>
             <Badge color="おすすめ">おすすめ</Badge>
+          </div>
+        </Card>
+        {/* Iconコンポーネント */}
+        <Card title="Avatar">
+          <div className="flex flex-wrap items-center gap-2">
+            <Avatar />
           </div>
         </Card>
       </div>
