@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/Button";
 import { Panel } from "@/components/ui/Panel";
 import { Badge } from "@/components/ui/Badge";
 import { Avatar } from "@/components/ui/Avatar";
+import { Input } from "@/components/ui/Input";
 
 export default function Home() {
   return (
@@ -52,6 +53,10 @@ export default function Home() {
           <div className="flex flex-wrap items-center gap-2">
             <Avatar />
           </div>
+        </Card>
+        {/* Inputコンポーネント */}
+        <Card title="Input">
+          <Input />
         </Card>
       </div>
     </div>
